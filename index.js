@@ -5,9 +5,10 @@ $(function(){
             $('#shopping-list-entry').val("");//empty out the input field
             //append the new item to the list
             $('ul').append(
-                '<li><span class="shopping-item">'+ item +'</span>'+
-                '<div class="shopping-item-controls"><button class="shopping-item-toggle"><span class="button-label">check</span></button>'+
-                " " + '<button class="shopping-item-delete"><span class="button-label">delete</span></button></div></li>'
+                `<li><span class="shopping-item"> ${item} </span>
+                <div class="shopping-item-controls">
+                <button class="shopping-item-toggle"><span class="button-label">check</span></button>
+                <button class="shopping-item-delete"><span class="button-label">delete</span></button></div></li>`
             )
         })
         //toggle between checked and unchecked 
